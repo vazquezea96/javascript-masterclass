@@ -41,5 +41,47 @@
 
 // console.log(bill([10, 15, 30], 0.2));
 
+// const name = "eduardo";
 
+// functions
 
+// const greet = () => "Hello";
+
+// let resultOne = greet();
+// console.log(resultOne);
+
+// methods
+// const resultTwo = name.toUpperCase();
+// console.log(resultTwo);
+
+// callbacks & foreach
+
+// const myFunc = (callbackFunc) => {
+//     // do something
+//     let value = 50;
+//     callbackFunc(value);
+// };
+
+// myFunc(function (value) {
+//     // do something
+//     console.log(value);
+// });
+
+// get a reference to the 'ul'
+const ul = document.querySelector('.people');
+
+let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+let html = ``;
+
+// const logPerson = (person, index) => {
+//     console.log(`${index} - hello ${person}`);
+// };
+
+people.forEach(function (person) {
+    // create html template
+    html += `<li style="color: purple">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;
